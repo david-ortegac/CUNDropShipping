@@ -10,22 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d279b56-4818-43df-8285-fa547eb831ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CUNDropShipping.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/CUNDropShipping.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/CunDropShipping.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/CunDropShipping.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/WebApplication1.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/ProductAdapter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/application/ProductService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/domain/ProductDomain.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/domain/ProductServiceImp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/domain/ProductServiceImp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/infraestructure/Entity/Product.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/infraestructure/Entity/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/infraestructure/conection/AppDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/Mapper/AdapterMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/Mapper/AdapterMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/Mapper/IAdapterMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/Mapper/IAdapterMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +41,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71e52421c6904ee8851944a0b013698923200/5a/ffe23707/ILogger`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/13dc2b82f180e129c1f1186d422e1ed4122e23e1e1f265941fb7d2d3e1ce2/IActionResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f0c16cda8a141e194c9151fd8f6acd0f93ef39e54a2a250baf2e5b2fa1fac6/WebApplication.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 0
@@ -65,7 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.CUNDropShipping: http.executor": "Run",
+    ".NET Launch Settings Profile.CUNDropShipping: http.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -134,16 +124,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1756859140079</updated>
-      <workItem from="1756859142495" duration="902000" />
+      <workItem from="1756859142495" duration="3547000" />
     </task>
+    <task id="LOCAL-00001" summary=":sparkles: Fix some files with hexagonal">
+      <option name="closed" value="true" />
+      <created>1756860091984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756860091984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value=":sparkles: Fix some files with hexagonal" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Fix some files with hexagonal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

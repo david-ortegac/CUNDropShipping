@@ -1,4 +1,4 @@
-using CunDropShipping.Controllers.Mapper;
+using CUNDropShipping.adapter.restful.v1.controller.Mapper;
 using CunDropShipping.domain.Entity;
 
 namespace CunDropShipping.Controllers.Entity;

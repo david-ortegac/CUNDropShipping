@@ -1,7 +1,7 @@
 using CunDropShipping.Controllers.Entity;
 using CunDropShipping.domain.Entity;
 
-namespace CunDropShipping.Controllers.Mapper;
+namespace CUNDropShipping.adapter.restful.v1.controller.Mapper;
 
 public interface IAdapterMapper
 {
