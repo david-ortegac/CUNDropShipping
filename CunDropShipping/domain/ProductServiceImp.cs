@@ -1,25 +1,31 @@
-using CUNDropShipping.application;
+using CunDropShipping.application.Service;
+using CunDropShipping.domain.Entity;
 
-namespace CUNDropShipping.domain;
+namespace CunDropShipping.domain;
 
-public class ProductServiceImp:  ProductService
+public class ProductServiceImp : ProductService
 {
-    public ProductDomain getAllProducts()
+    public List<DomainProductEntity> GetAllProducts()
     {
         throw new NotImplementedException();
     }
 
-    public ProductDomain getProductById(int id)
+    public DomainProductEntity GetById(int id)
     {
         throw new NotImplementedException();
     }
 
-    public ProductDomain getProductByName(string name)
+    public DomainProductEntity SaveProduct(DomainProductEntity product)
     {
         throw new NotImplementedException();
     }
 
-    public ProductDomain getProductBySlug(string slug)
+    public DomainProductEntity UpdateProduct(DomainProductEntity product)
+    {
+        throw new NotImplementedException();
+    }
+
+    public string DeleteProduct(int id)
     {
         throw new NotImplementedException();
     }

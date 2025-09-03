@@ -8,7 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
+        <PackageReference Include="MySql.Data" Version="9.4.0" />
+        <PackageReference Include="MySql.Data.EntityFramework" Version="9.4.0" />
+        <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
 
@@ -16,6 +18,10 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="adapter\restful\v1\" />
     </ItemGroup>
 
 </Project>
