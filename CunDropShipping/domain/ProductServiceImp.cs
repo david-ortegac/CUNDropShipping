@@ -1,10 +1,9 @@
 using CunDropShipping.application.Service;
-using CunDropShipping.Controllers.Entity;
 using CunDropShipping.domain.Entity;
 using CunDropShipping.domain.Mapper;
 using CUNDropShipping.infraestructure.DbContext;
 
-namespace CunDropShipping.domain;
+namespace CUNDropShipping.domain;
 
 public class ProductServiceImp : IProductService
 {

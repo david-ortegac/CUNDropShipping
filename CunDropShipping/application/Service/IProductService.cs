@@ -1,4 +1,3 @@
-using CunDropShipping.Controllers.Entity;
 using CunDropShipping.domain.Entity;
 
 namespace CunDropShipping.application.Service;

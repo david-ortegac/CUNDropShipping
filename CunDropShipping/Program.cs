@@ -1,3 +1,8 @@
+using CUNDropShipping.adapter.restful.v1.controller.Mapper;
+using CunDropShipping.application.Service;
+using CunDropShipping.Controllers.Entity;
+using CUNDropShipping.domain;
+using CunDropShipping.domain.Mapper;
 using CUNDropShipping.infraestructure.DbContext;
 using CUNDropShipping.infraestructure.Entity;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +23,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         new MySqlServerVersion(new Version(8, 0, 39)) // ajusta a tu versión de MySQL
     )
 );
+
+// Registra tus dependencias de infraestructura (según tus tipos reales)
+builder.Services.AddScoped<DBSet>();
+builder.Services.AddScoped<IInfraestructureMapper, InfraestructureMapper>();
+builder.Services.AddScoped<IAdapterMapper, AdapterMapper>();
+builder.Services.AddScoped<IProductService, ProductServiceImp>();
 
 var app = builder.Build();
 
