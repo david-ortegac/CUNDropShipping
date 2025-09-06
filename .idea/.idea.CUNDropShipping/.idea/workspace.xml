@@ -10,10 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d279b56-4818-43df-8285-fa547eb831ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CunDropShipping/infraestructure/DbContext/DBSet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CunDropShipping/infraestructure/Mapper/IInfraestructureMapper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/Mapper/AdapterMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/Mapper/AdapterMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/Mapper/IAdapterMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/Mapper/IAdapterMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/CunDropShipping.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/CunDropShipping.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/application/Service/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/application/Service/IProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/domain/Mapper/DomainMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/infraestructure/Mapper/InfraestructureMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/domain/Mapper/IDomainMapper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/domain/ProductServiceImp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/domain/ProductServiceImp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/infraestructure/DbContext/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/infraestructure/DbContext/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/infraestructure/Entity/InfraestructureProductEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/infraestructure/Entity/Products.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,29 +36,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "david-ortegac"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;david-ortegac&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/david-ortegac/CUNDropShipping.git",
-    "accountId": "05f7b43a-47b7-445b-94d1-84c29cf7f217"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/david-ortegac/CUNDropShipping.git&quot;,
+    &quot;accountId&quot;: &quot;05f7b43a-47b7-445b-94d1-84c29cf7f217&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/infraestructure/DbContext/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CunDropShipping/infraestructure/DbContext/DBSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71e52421c6904ee8851944a0b013698923200/5a/ffe23707/ILogger`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/13dc2b82f180e129c1f1186d422e1ed4122e23e1e1f265941fb7d2d3e1ce2/IActionResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f0c16cda8a141e194c9151fd8f6acd0f93ef39e54a2a250baf2e5b2fa1fac6/WebApplication.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="32AMthN949Yn6DUbaGaVobX272N" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,6 +80,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "HotReloadSettingsPage",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -113,7 +129,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
   </component>

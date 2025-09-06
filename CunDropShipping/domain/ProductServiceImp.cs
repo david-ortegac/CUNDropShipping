@@ -1,32 +1,46 @@
 using CunDropShipping.application.Service;
+using CunDropShipping.Controllers.Entity;
 using CunDropShipping.domain.Entity;
+using CunDropShipping.domain.Mapper;
+using CUNDropShipping.infraestructure.DbContext;
 
 namespace CunDropShipping.domain;
 
-public class ProductServiceImp : ProductService
+public class ProductServiceImp : IProductService
 {
+    private readonly DBSet _dbSet;
+    private readonly IInfraestructureMapper _mapper;
+
+    public ProductServiceImp(DBSet set, IInfraestructureMapper mapper)
+    {
+        this._dbSet = set;
+        this._mapper = mapper;
+    }
+    
     public List<DomainProductEntity> GetAllProducts()
     {
-        throw new NotImplementedException();
+        var products = _dbSet.GetAllProducts();
+        return _mapper.ToDomainProducts(_mapper.ToInfraestructureProducts(products));
     }
 
     public DomainProductEntity GetById(int id)
     {
-        throw new NotImplementedException();
+        var product = _dbSet.GetById(id);
+        return _mapper.ToDomainProduct(_mapper.ToInfraestructureProduct(product));
     }
 
     public DomainProductEntity SaveProduct(DomainProductEntity product)
     {
-        throw new NotImplementedException();
+        return _dbSet.SaveProduct(_mapper.ToInfraestructureProduct(product));
     }
 
     public DomainProductEntity UpdateProduct(DomainProductEntity product)
     {
-        throw new NotImplementedException();
+        return _dbSet.UpdateProduct(_mapper.ToInfraestructureProduct(product));
     }
 
     public string DeleteProduct(int id)
     {
-        throw new NotImplementedException();
+        return _dbSet.DeleteProduct(id);
     }
 }

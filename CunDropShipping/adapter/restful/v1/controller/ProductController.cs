@@ -9,10 +9,10 @@ namespace CunDropShipping.adapter.restful.v1.controller;
 [Route("api/v1/products")]
 public class ProductController : ControllerBase
 {
-    private readonly ProductService _productService;
+    private readonly IProductService _productService;
     private readonly IAdapterMapper _adapterMapper;
 
-    public ProductController(ProductService service, IAdapterMapper adapterMapper)
+    public ProductController(IProductService service, IAdapterMapper adapterMapper)
     {
         _productService = service;
         _adapterMapper = adapterMapper;
@@ -20,32 +20,23 @@ public class ProductController : ControllerBase
 
     // GET api/v1/products
         [HttpGet]
-        public ActionResult<IEnumerable<AdapterProductEntity>> GetAll()
+        public async Task<ActionResult<IEnumerable<AdapterProductEntity>>> GetAll()
         {
-            var domainList = _productService.GetAllProducts();
-            var adapterList = _adapterMapper.ToAdapterProductList(domainList);
-            return Ok(adapterList);
+            return Ok(_adapterMapper.ToAdapterProductList(_productService.GetAllProducts()));
         }
 
         // GET api/v1/products/5
         [HttpGet("{id:int}")]
-        public ActionResult<AdapterProductEntity> GetById(int id)
+        public async Task<ActionResult<AdapterProductEntity>> GetById(int id)
         {
-            var domain = _productService.GetById(id);
-            var adapter = _adapterMapper.ToAdapterProduct(domain);
-            return Ok(adapter);
+            return Ok(_adapterMapper.ToAdapterProduct(_productService.GetById(id)));
         }
 
         // POST api/v1/products
         [HttpPost]
-        public ActionResult<AdapterProductEntity> Create([FromBody] AdapterProductEntity payload)
+        public async Task<ActionResult<AdapterProductEntity>> Create([FromBody] AdapterProductEntity payload)
         {
-            var domain = _adapterMapper.ToDomainProduct(payload);
-            var created = _productService.SaveProduct(domain);
-            var adapter = _adapterMapper.ToAdapterProduct(created);
-
-            // Devuelve 201 con Location
-            return CreatedAtAction(nameof(GetById), new { id = adapter.Id }, adapter);
+            return Ok(_adapterMapper.ToAdapterProduct(_productService.SaveProduct(_adapterMapper.ToDomainProduct(payload))));
         }
 
         // PUT api/v1/products/5

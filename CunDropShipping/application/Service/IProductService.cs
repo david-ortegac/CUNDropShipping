@@ -1,8 +1,9 @@
+using CunDropShipping.Controllers.Entity;
 using CunDropShipping.domain.Entity;
 
 namespace CunDropShipping.application.Service;
 
-public interface ProductService
+public interface IProductService
 {
     List<DomainProductEntity> GetAllProducts();
     DomainProductEntity GetById(int id);
