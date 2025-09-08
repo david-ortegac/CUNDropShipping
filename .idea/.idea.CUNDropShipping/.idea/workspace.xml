@@ -11,10 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d279b56-4818-43df-8285-fa547eb831ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CUNDropShipping.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/CUNDropShipping.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/application/Service/IProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/application/Service/IProductService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CunDropShipping/domain/ProductServiceImp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/domain/ProductServiceImp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +36,10 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/application/Service/IProductService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/domain/ProductServiceImp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/infraestructure/DbContext/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/infraestructure/DbContext/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CunDropShipping/infraestructure/DbContext/DBSet.cs" root0="FORCE_HIGHLIGHTING" />
@@ -156,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757117367243</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=":fire: Fix import builder service scope">
+      <option name="closed" value="true" />
+      <created>1757118770245</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757118770245</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +174,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value=":sparkles: Fix some files with hexagonal" />
     <MESSAGE value=":sparkles: Fix return data from any module" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Fix return data from any module" />
+    <MESSAGE value=":fire: Fix import builder service scope" />
+    <option name="LAST_COMMIT_MESSAGE" value=":fire: Fix import builder service scope" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -185,19 +192,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/ProductController.cs</url>
-          <line>24</line>
-          <properties documentPath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" containingFunctionPresentation="Method 'GetAll'">
-            <startOffsets>
-              <option value="759" />
-            </startOffsets>
-            <endOffsets>
-              <option value="840" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

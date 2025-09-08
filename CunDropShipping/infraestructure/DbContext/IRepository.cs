@@ -6,12 +6,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CUNDropShipping.infraestructure.DbContext;
 
-public class DBSet
+public class IRepository
 {
     private readonly AppDbContext _db;
     private readonly IInfraestructureMapper _mapper;
 
-    public DBSet(AppDbContext db, IInfraestructureMapper mapper)
+    public IRepository(AppDbContext db, IInfraestructureMapper mapper)
     {
         _db = db;
         _mapper = mapper;

@@ -7,39 +7,39 @@ namespace CUNDropShipping.domain;
 
 public class ProductServiceImp : IProductService
 {
-    private readonly DBSet _dbSet;
+    private readonly IRepository _repository;
     private readonly IInfraestructureMapper _mapper;
 
-    public ProductServiceImp(DBSet set, IInfraestructureMapper mapper)
+    public ProductServiceImp(IRepository set, IInfraestructureMapper mapper)
     {
-        this._dbSet = set;
+        this._repository = set;
         this._mapper = mapper;
     }
     
     public List<DomainProductEntity> GetAllProducts()
     {
-        var products = _dbSet.GetAllProducts();
+        var products = _repository.GetAllProducts();
         return _mapper.ToDomainProducts(_mapper.ToInfraestructureProducts(products));
     }
 
     public DomainProductEntity GetById(int id)
     {
-        var product = _dbSet.GetById(id);
+        var product = _repository.GetById(id);
         return _mapper.ToDomainProduct(_mapper.ToInfraestructureProduct(product));
     }
 
     public DomainProductEntity SaveProduct(DomainProductEntity product)
     {
-        return _dbSet.SaveProduct(_mapper.ToInfraestructureProduct(product));
+        return _repository.SaveProduct(_mapper.ToInfraestructureProduct(product));
     }
 
     public DomainProductEntity UpdateProduct(DomainProductEntity product)
     {
-        return _dbSet.UpdateProduct(_mapper.ToInfraestructureProduct(product));
+        return _repository.UpdateProduct(_mapper.ToInfraestructureProduct(product));
     }
 
     public string DeleteProduct(int id)
     {
-        return _dbSet.DeleteProduct(id);
+        return _repository.DeleteProduct(id);
     }
 }

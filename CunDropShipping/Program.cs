@@ -25,7 +25,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 );
 
 // Registra tus dependencias de infraestructura (según tus tipos reales)
-builder.Services.AddScoped<DBSet>();
+builder.Services.AddScoped<IRepository>();
 builder.Services.AddScoped<IInfraestructureMapper, InfraestructureMapper>();
 builder.Services.AddScoped<IAdapterMapper, AdapterMapper>();
 builder.Services.AddScoped<IProductService, ProductServiceImp>();
