@@ -11,6 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7d279b56-4818-43df-8285-fa547eb831ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CUNDropShipping/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CunDropShipping/infraestructure/Entity/Products.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CunDropShipping/infraestructure/Entity/Product.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +39,14 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/adapter/restful/v1/controller/ProductController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/application/Service/IProductService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/domain/ProductServiceImp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/domain/ProductServiceImp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/infraestructure/DbContext/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/davidortega/Documents/GitHub/CUNDropShipping/CunDropShipping/infraestructure/DbContext/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CunDropShipping/infraestructure/DbContext/DBSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CunDropShipping/infraestructure/DbContext/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71e52421c6904ee8851944a0b013698923200/5a/ffe23707/ILogger`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/13dc2b82f180e129c1f1186d422e1ed4122e23e1e1f265941fb7d2d3e1ce2/IActionResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/db7395f4add94e6d10e515b3e55373f2821f8323de7dc8e314d78feefacf5584/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -162,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757118770245</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":fire: Fix DBSet to IRepository.cs">
+      <option name="closed" value="true" />
+      <created>1757300451018</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1757300451018</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,12 +182,24 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value=":sparkles: Fix some files with hexagonal" />
     <MESSAGE value=":sparkles: Fix return data from any module" />
     <MESSAGE value=":fire: Fix import builder service scope" />
-    <option name="LAST_COMMIT_MESSAGE" value=":fire: Fix import builder service scope" />
+    <MESSAGE value=":fire: Fix DBSet to IRepository.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value=":fire: Fix DBSet to IRepository.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

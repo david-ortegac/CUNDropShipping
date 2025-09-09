@@ -45,8 +45,6 @@ public class ProductController : ControllerBase
         {
             var domain = _adapterMapper.ToDomainProduct(payload);
             var updated = _productService.UpdateProduct(domain);
-            if (updated == null) return NotFound();
-
             var adapter = _adapterMapper.ToAdapterProduct(updated);
             return Ok(adapter);
         }
